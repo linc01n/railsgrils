@@ -1,9 +1,9 @@
-<h1>Listing ideas</h1>
+<h1>See how's Kenta has fun everyday :D</h1>
 
 <table>
   <thead>
     <tr>
-      <th>chinese name</th>
+      <th>Day</th>
       <th>Description</th>
       <th>Picture</th>
       <th colspan="3"></th>
@@ -13,7 +13,7 @@
   <tbody>
     <% @ideas.each do |idea| %>
       <tr>
-        <td><%= idea.name %></td>
+        <td><%= idea.Day %></td>
         <td><%= idea.description %></td>
         <td><%= image_tag(idea.picture_url, :width => 600) if idea.picture.present? %></td>
         <td><%= link_to 'Show', idea %></td>
